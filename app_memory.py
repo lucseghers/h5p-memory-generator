@@ -48,7 +48,7 @@ def create_text_card(text, filename, img_dir,
 
     # lettertype proberen
     try:
-        font = ImageFont.truetype("arial.ttf", 80)
+        font = ImageFont.truetype("arial.ttf", 280)
     except Exception:
         font = ImageFont.load_default()
 
