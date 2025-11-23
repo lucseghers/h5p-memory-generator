@@ -36,7 +36,7 @@ def parse_pairs(text: str):
 
 
 def create_text_card(text, filename, img_dir,
-                     img_width=600, img_height=400,
+                     img_width=300, img_height=180,
                      bg_color=(255, 255, 255),
                      text_color=(0, 0, 0)):
     """
@@ -48,7 +48,7 @@ def create_text_card(text, filename, img_dir,
 
     # lettertype proberen
     try:
-        font = ImageFont.truetype("arial.ttf", 280)
+        font = ImageFont.truetype("arial.ttf", 80)
     except Exception:
         font = ImageFont.load_default()
 
