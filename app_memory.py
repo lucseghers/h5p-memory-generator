@@ -36,7 +36,7 @@ def parse_pairs(text: str):
 
 
 def create_text_card(text, filename, img_dir,
-                     img_width=300, img_height=180,
+                     img_width=400, img_height=180,
                      bg_color=(255, 255, 255),
                      text_color=(0, 0, 0)):
     """
