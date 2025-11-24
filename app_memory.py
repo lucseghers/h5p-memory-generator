@@ -48,11 +48,11 @@ def create_text_card(text, filename, img_dir,
 
     # lettertype proberen
     try:
-        font = ImageFont.truetype("arial.ttf", 80)
+        font = ImageFont.truetype("DejaVuSans-Bold.ttf", 80)
     except Exception:
         font = ImageFont.load_default()
 
-    wrapped = fill(text, width=2) #15 vervangen door 2
+    wrapped = fill(text, width=10) #15 vervangen door 10
     bbox = draw.multiline_textbbox((0, 0), wrapped, font=font, align="center")
     tw = bbox[2] - bbox[0]
     th = bbox[3] - bbox[1]
